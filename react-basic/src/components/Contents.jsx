@@ -3,6 +3,7 @@ import Bulletin from './Bulletin'
 import ImageBox from './ImageBox'
 
 const Contents = () => {
+  
   return (
     <div className='content'> 
         <ImageBox></ImageBox>

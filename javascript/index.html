@@ -4,8 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript</title>
+
+    <style>
+        body{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        #box{
+            height: max-content;
+            width: 300px;
+            border: 2px solid #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #value{
+            font-size: 1.5em;
+        }
+        #controls button{
+            width: 300px;
+            padding: 20px 10px;
+            font-size: 1.2rem;
+            margin: 20px;
+        }
+    </style>
 </head>
 <body>
+    <div id="box">
+        <h1>Value : <span id="value">7</span></h1>
+    </div>
+    <div id="controls">
+        <button id="plus">plus</button>
+        <button id="minus">minus</button>
+    </div>
     
+    <script src="dom.js"></script>
 </body>
 </html>

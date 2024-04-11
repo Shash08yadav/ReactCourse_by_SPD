@@ -22,3 +22,4 @@ const objColl = [
 
 console.table([array[0][0],array[0][1]])
 console.table([objColl[1].title, objColl[1].desc])
+
