@@ -12,3 +12,6 @@ Giving Outline of the components
 3. *Bulletin* => Child of Contents  
 4. *Props* : Immutable Property given by Parents to child
 5. *State* : Intrinsic Characteristic of component itself
+6. *useState* : React render upon any changes in state of a component
+7. *Conditional Rendering* : Render with ternary operator
+8. *useEffect* : perform any action when any changes happen in dependency list
