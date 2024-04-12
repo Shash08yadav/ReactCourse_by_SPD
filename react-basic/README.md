@@ -10,3 +10,5 @@ Giving Outline of the components
 1. **App** : Wrapper all => Parent
 2. **Heading**, **Author**, **Contents** => Child of Parent
 3. *Bulletin* => Child of Contents  
+4. *Props* : Immutable Property given by Parents to child
+5. *State* : Intrinsic Characteristic of component itself

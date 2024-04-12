@@ -19,7 +19,7 @@ plus.addEventListener('click', ()=>{
 })
 minus.addEventListener('click', ()=>{
     score = score - 1;
-    value.innerText=score;
+    value.innerText=score; //3. Reflect
     console.log(score);
 })
 
