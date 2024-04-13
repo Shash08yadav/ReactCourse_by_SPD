@@ -2,6 +2,7 @@ import Heading from './components/Heading'
 import Author from './components/Author'
 import Contents from './components/Contents'
 import Writer from './components/Writer'
+import MrFruit from './components/MrFruit'
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
      <Author></Author>
      <Contents/>
      <Writer />
+     <MrFruit/>
     </div>
   )
 }

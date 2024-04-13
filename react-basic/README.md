@@ -15,3 +15,5 @@ Giving Outline of the components
 6. *useState* : React render upon any changes in state of a component
 7. *Conditional Rendering* : Render with ternary operator
 8. *useEffect* : perform any action when any changes happen in dependency list
+9. *map* : javascript higher order function => inside func accept / return
+10. **list rendering** : how to render list and key prop
