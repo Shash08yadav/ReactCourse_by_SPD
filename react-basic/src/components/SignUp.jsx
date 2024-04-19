@@ -20,20 +20,41 @@ const SignUp = () => {
     });
 
     const handleChange = (event) =>{
-        console.log(event);
+        // console.log(event);
 
-        setFormData(()=>{
-            // key : value
-            return {...formData,
-            [event.target.name] : event.target.value}
+        if(event.target.name === "skills"){
+            // skills update, remove
+            if(event.target.checked){
+                console.log("add to skills : ", event.target.value)
+                formData.skills = [...formData.skills, event.target.value]
+                console.log(formData)
+            }
+            else{
+                console.log("remove from skills : ", event.target.value)
+                formData.skills = formData.skills.filter((currSkill)=> currSkill !== event.target.value)
+                console.log(formData)
+            }
+        }
+        else{
+            setFormData(()=>{
+                // key : value
+                return {...formData,
+                [event.target.name] : event.target.value}
+    
+            })
+        }
 
-        })
+    }
+
+    const onSubmitHandler = (e) => {
+        e.preventDefault()
+        console.log("submitted")
         console.log(formData);
     }
   return (
     <div className="form-container">
       <h1>Create Your Account 😁</h1>
-      <form action="" onSubmit={(e) => e.preventDefault()}>
+      <form action="" onSubmit={(e) => onSubmitHandler(e)}>
         <section className="personal-details form-section">
           <div>
             <label htmlFor="firstName">First Name</label>
@@ -77,6 +98,7 @@ const SignUp = () => {
           <div>
             <label htmlFor="zodiac">Zodiac Sign </label>
             <select name="zodiac" id="zodiac" value={formData.zodiac} onChange={handleChange}>
+                <option value={''}> -----Select One------ </option>
               <option value="aries">Aries - (Mar 21 - Apr 19)</option>
               <option value="taurus">Taurus - (Apr 20 - May 20)</option>
               <option value="gemini">Gemini - (May 21 - Jun 21)</option>
