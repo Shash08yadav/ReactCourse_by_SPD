@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.danger{
+    color : #ff0000;
+    text-decoration: underline;
+}
+
+.info{
+    color: rgb(75, 75, 208);
+    font-style: italic;
+}
