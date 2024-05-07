@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+.wrapper{
+    height: 70vh;
+    width: 90vw;
+    border: 2px solid black;
+    color: black;
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+}
+
+.left{
+    width: 50%;
+    height: 100%;
+    background-color: crimson;
+    padding: 20px;
+}
+.right{
+    width: 50%;
+    height: 100%;
+    background-color: greenyellow;
+    padding: 20px;
+}
+/* Tab Styling */
+.tab{
+    width: 100%;
+    height: 60px;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 60px;
+}
+
+.tab div{
+    width: 20%;
+    height: 40px;
+    background-color: white;
+    border: 1px solid #eee;
+    color: #333;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.tab div:hover{
+    background-color: crimson;
+    color:white;
+}
+
+/* Drop Styling */
+.drop{
+    width: 100%;
+    height: auto;
+    /* background-color: skyblue; */
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+.drop div{
+    display: flex;
+    gap: 10px;
+    background-color: skyblue;
+}
+.drop label{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    /* background-color: red; */
+}
+
+.drop label .desc{
+    width: 60%;
+    display: flex;
+    justify-content: stretch;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+    padding:  10px 0px;
+}
+
+.drop label .price{
+    width: 30%;
+}
+.drop label .price .discounted{
+    text-decoration: line-through;
+    color: #666;
+    padding-right: 5px ;
+}
+.drop label .price strong{
+    color: blue;
+    font-size: 1.1rem;
+}
+
+.drop label .price .time{
+    color: #444;
+}
+
+.drop label .desc h1{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.drop label .desc hr{
+    width: 80px;
+    height: 4px;
+    background-color: red;
+    display: inline-block;
+   position: absolute;
+   top: 35px;
+   left: 0;
+   border: 0;
+}
+.drop label .desc p{
+    width: 100%;
+    height: auto;
+    color: #666;
+}
+
+/* Side bar styling */
+.sidebar{
+    width: 100%;
+    height: auto;
+    background-color: cornflowerblue;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+ 
+}
+.head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+
+}
+.logo{
+    height: 50px;
+    width: 50px;
+    background-color: beige;
+    border-radius: 50%;
+}
+.time{
+    margin-left: 20px;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+.btn button{
+    height: 40px;
+    width: 400px;
+    font-size: larger;
+}
+.add{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    font-size: 1.2rem;
+}
